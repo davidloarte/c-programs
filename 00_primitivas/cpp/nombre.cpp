@@ -1,0 +1,11 @@
+#include <iostream> 
+    
+using namespace std;
+    int 
+main()
+
+{
+    cout << "The world is a vampire!" << endl;
+    
+    return EXIT_SUCCESS;
+}
