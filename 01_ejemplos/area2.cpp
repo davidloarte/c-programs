@@ -2,21 +2,18 @@
 #include <stdlib.h>
 
 int main(){
-    int lado, area, perimetro;
+    double lado, area, perimetro;
 
     system("toilet --gay -fpagga CUADRADO");
 
-    //entrada de datos
     printf("Lado: ");
-    scanf(" %i", &lado);
+    scanf(" %lf", &lado);
 
-    // calculos
     area = lado * lado;
     perimetro = 4 * lado;
 
-    /*salida de datos*/
-    printf("Area: %i\n"
-           "Perimetro: %i\n",
+    printf("Area: %lf\n"
+            "Perimetro %lf\n",
             area, perimetro );
     return EXIT_SUCCESS;
 }
