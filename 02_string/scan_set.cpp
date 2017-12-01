@@ -9,8 +9,10 @@ int main(){
     int num;
     char hexadecimal[16];
 
+    int dia, mes, ano;
     printf("Entero: ");
-    scanf(" %i", &num);
+    scanf(" %i", &num);     //scanf  con %m lo que hace es reservar espacios de memoria
+    printf("Tu nombre: ");
     scanf(" %s", nombre);
     printf("[%i] => %s.\n", num, nombre);
 
