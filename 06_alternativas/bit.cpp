@@ -14,6 +14,7 @@ int main(){
     printf("Indicame tambien el valor del segundo bit (acuerdate de en 0 y 1)\n");
     scanf(" %[0-1]", &bit2);
 
+//los parentesis se pueden quitar pero de momento los dejo para poder verlo más claro. 
     if (bit1 == 0 ){
         if (bit2 == 0){
             printf("El valor en 0\n");
