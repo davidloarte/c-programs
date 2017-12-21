@@ -26,24 +26,18 @@ int main(){
     scanf(" %u", &opcion);
 
     switch(opcion){
-          case 1:
+          case TRI:
         printf("△"); // ctrl+mays+u y luego 25b3
-          case 2:
+          case CUA:
         printf("☐"); // ctrl+mays+u y luego 2610
-          case 3:
+          case PAr:
         printf("▱"); // ctrl+mays+u y luego 25B1
-          case 4:
+          case PEN:
         printf("⬠"); // ctrl+mays+u y luego 2B20
-          case 5:
+          case CIR:
         printf("○"); // ctrl+mays+u y luego 25c3
 
-
-
-
-
     }
-
-
 
     return EXIT_SUCCESS;
 }
