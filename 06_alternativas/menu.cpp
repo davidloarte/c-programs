@@ -2,10 +2,10 @@
 #include<stdlib.h>
 
 #define TRI 1
-#define CUA 1
-#define PAR 1
-#define PEN 1
-#define CIR 1
+#define CUA 2
+#define PAR 3
+#define PEN 4
+#define CIR 5
 
 int main(){
 
@@ -23,19 +23,24 @@ int main(){
             "\n"
             "\tOpción: "
             );
-    scanf(" %u", &opcion);
+    scanf(" %u", &option);
 
-    switch(opcion){
-          case TRI:
+    switch(option){
+          case 1:
         printf("△"); // ctrl+mays+u y luego 25b3
-          case CUA:
+        break;
+          case 2:
         printf("☐"); // ctrl+mays+u y luego 2610
-          case PAr:
+        break;
+          case 3:
         printf("▱"); // ctrl+mays+u y luego 25B1
-          case PEN:
+        break;
+          case 4:
         printf("⬠"); // ctrl+mays+u y luego 2B20
-          case CIR:
+        break;
+          case 5:
         printf("○"); // ctrl+mays+u y luego 25c3
+        break;
 
     }
 
