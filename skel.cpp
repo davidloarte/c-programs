@@ -1,11 +1,9 @@
-
 #include <stdlib.h>
-#include <stdio.h
+#include <stdio.h>
 
+int main(){
 
-
-
-	return EXIT_SUCESS;
+    return EXIT_SUCCESS;
 }
 
 
