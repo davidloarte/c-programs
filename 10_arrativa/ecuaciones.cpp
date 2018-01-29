@@ -53,7 +53,8 @@ int main(){
     double resultadoy, resultadox;
 
     resultadoy = m[1][2];
-    resultadox = ra/resultadoy;
+    resultadox = (ra - resultadoy*ya)/xa;
+/*  resultadox = (m[0][2] -= m[1][2]);*/
 
     printf("El resultado de las escuaciones es para 'x': %2.lf y para 'y': es %2.lf.\n", resultadox, resultadoy);
     return EXIT_SUCCESS;
