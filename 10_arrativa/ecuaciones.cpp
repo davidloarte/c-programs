@@ -35,17 +35,16 @@ int main(){
         {xa,ya,ra},
         {xb,yb,rb}
     },
-        coef[N], k;
-    int cuenta =0;
+        k;
 
     for(int a=0; a<N; a++){
-        coef[cuenta++] = k = m[a][a];
+        k = m[a][a];
         for(int col=0; col<n; col++)
             m[a][col] /=k;
-        for(int fil=n+1; fil<N; fil++){
-            k = m[fil][n];
+        for(int fil=a+1; fil<N; fil++){
+            k = m[fil][a];
             for (int col=0; col<n; col++)
-                m[fil][col] -= (m[N][col] * k);
+                m[fil][col] -= (m[a][col] * k);
         }
         verm(m);
     }
@@ -53,8 +52,8 @@ int main(){
     double resultadoy, resultadox;
 
     resultadoy = m[1][2];
-    resultadox = (ra - resultadoy*ya)/xa;
-/*  resultadox = (m[0][2] -= m[1][2]);*/
+//**  resultadox = ra - resultadoy*ya;*/
+    resultadox = (m[0][2] -= m[1][2]);
 
     printf("El resultado de las escuaciones es para 'x': %2.lf y para 'y': es %2.lf.\n", resultadox, resultadoy);
     return EXIT_SUCCESS;
