@@ -14,9 +14,9 @@ int main(){
 
 	for(int n=0; n<N; n++){
 		multiplicacion = a[n] * b[n];
-		suma += multiplicacion; 
+		suma += multiplicacion;
 
-	}	
+	}
 
 	printf("La suma total es: %.2lf\n", suma);
 
